@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mentions Légales et Politique de Confidentialité</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/StyleFormulaire.css' %}">
+</head>
+<body>
+     <!-- Ajout du logo -->
+     <a href="{% url 'index' %}" style="text-decoration: none; color: #09433d;">
+      <h1> <div style="text-align: center; margin-bottom: 20px;">
+        <img src="{% static 'image/logo.jpeg' %}" alt="Logo" style="max-width: 400px;">
+    </div>
+ Mentions Légales </h1>
+ </a>
+ <nav>
+        <ul class="menu">
+            <li><a href="{% url 'index' %}">Retourner à la carte des évènements</a></li>
+            <li><a href="{% url 'calendrier_evenement' %}">Voir le calendrier des événements</a></li> 
+            <li><a href="{% url 'ajouter_evenement' %}">Ajouter mon évènement</a></li>
+            <li><a href="{% url 'a_propos' %}">À propos de nous</a></li>
+            <li><a href="mailto:contact@cartagrimpe.fr">Nous contacter</a></li>
+            <li><a href="{% url 'mentions_legales' %}">Voir les mentions légales</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+       
+        
+        <p>
+            Conformément aux dispositions des articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, nous vous informons des éléments suivants :
+        </p>
+        <h2>Éditeur du site</h2>
+        <p>
+            Ce site est édité par des particuliers. Il est à but non lucratif. <br>
+        </p>
+        <h2>Hébergement</h2>
+        <p>
+            Le site est hébergé par : <br>
+            Hostinger <br>
+            61 Lordou Vironos Street, 6023 Larnaca, Chypre <br>
+            <a href="https://www.hostinger.fr/contact">Contacter Hostinger</a>
+        </p>
+        <h2>Responsabilité</h2>
+        <p>
+            L'éditeur décline toute responsabilité quant à l’utilisation qui pourrait être faite des informations et contenus présents sur ce site.
+        </p>
+
+        <h1>Politique de Confidentialité</h1>
+        <p>
+            Conformément au RGPD, cette politique de confidentialité vous explique comment vos données personnelles sont collectées, utilisées et protégées lorsque vous utilisez ce site.
+        </p>
+        <h2>Données collectées</h2>
+        <p>
+            Nous collectons uniquement les données strictement nécessaires à l'amélioration de l'expérience utilisateur, telles que :
+        </p>
+        <ul>
+            <li>Les données que vous fournissez via un formulaire de contact (si applicable)</li>
+        </ul>
+
+        <h2>Utilisation des données</h2>
+        <p>
+            Les données collectées sont utilisées uniquement pour les finalités suivantes :
+        </p>
+        <ul>
+            <li>Répondre à vos demandes via le formulaire de contact</li>
+            <li>Améliorer l'expérience utilisateur du site</li>
+        </ul>
+
+        <h2>Droits des utilisateurs</h2>
+        <p>
+            Conformément au RGPD, vous avez le droit de :
+        </p>
+        <ul>
+            <li>Accéder à vos données personnelles</li>
+            <li>Demander la rectification ou l'effacement de vos données</li>
+            <li>Limiter le traitement de vos données ou vous opposer à leur traitement</li>
+        </ul>
+        <p>
+            Pour exercer ces droits, vous pouvez nous contacter.
+        </p>
+
+        <h2>Cookies</h2>
+        <p>
+            Ce site n'utilise aucun cookie.
+        </p>
+
+        <h2>Durée de conservation des données</h2>
+        <p>
+            Vos données personnelles sont conservées uniquement le temps nécessaire pour atteindre les objectifs décrits dans cette politique de confidentialité.
+        </p>
+
+
+ 
+        
+       
+    </div>
+</body>
+</html>
+
