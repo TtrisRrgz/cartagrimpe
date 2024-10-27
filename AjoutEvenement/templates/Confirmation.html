@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" media="screen and (max-width: 1680px)" href="{% static 'css/StyleFormulaire.css' %}" />
+    <title>Événement pris en compte</title>
+    <meta http-equiv="refresh" content="5; url={% url 'index' %}"> <!-- Redirection après 5 secondes -->
+</head>
+<body>
+   <a href="{% url 'index' %}" style="text-decoration: none; color: #09433d;"><h1> <div style="text-align: center; margin-bottom: 20px;">
+        <img src="{% static 'image/logo.jpeg' %}" alt="Logo" style="max-width: 400px;">
+    </div>
+ Votre événement a bien été pris en compte!</h1>
+  </a>
+    <p>Merci pour votre aide et d'avoir soumis l'événement "{{ event_name }}". Vous serez redirigé vers la carte des événements dans quelques secondes.</p>
+    
+     <ul class="menu">
+            <li><a href="{% url 'index' %}">Retourner à la carte des évènements</a></li>
+        </ul>
+</body>
+</html>
+

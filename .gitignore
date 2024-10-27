@@ -1,0 +1,13 @@
+# Ignorer les fichiers Python compilés
+*.pyc
+__pycache__/
+
+# Ignorer les fichiers d'environnement
+.env
+
+# Ignorer le répertoire des fichiers statiques collectés
+/staticfiles/
+
+# Ignorer les fichiers de configuration personnels
+settings_local.py
+
